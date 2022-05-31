@@ -1,0 +1,78 @@
+.itemBox{
+    width: 500px;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+@media (max-width:700px){
+    .itemBox{
+        width: 350px;
+    }
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.checkbox{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.checkIcon,.editIcon,.deleteIcon{
+    height: 30px !important;
+    width: 30px !important;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: grey;
+}
+.checkIcon{
+    color:#ccc ;
+}
+.check{
+    color: blue !important;
+}
+.checked{
+    text-decoration: line-through;
+}
+.time{
+    font-size: 13px;
+    color: cadetblue;
+}
+.iconsBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.editIcon,.deleteIcon{
+    font-size: 18px;
+}
+.editIcon:hover{
+    color: darkgreen;
+}
+.deleteIcon:hover{
+    color: red;
+}
+.titleText{
+    max-width: 360px;
+   word-wrap: break-word
+}
+@media(max-width:700px){
+    .titleText{
+        max-width: 210px;
+    }
+}

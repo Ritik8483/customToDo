@@ -1,0 +1,58 @@
+.modalBox{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalContainer{
+    height: auto;
+    width: 500px;
+    background-color: beige;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s;
+}
+@media (max-width:700px) {
+    .modalContainer{
+        width: 350px;
+    }
+
+}
+.closeIcon{
+    position: absolute;
+    right: 2px;
+    top:2px;
+    font-size: 20px;
+    color: red !important;
+    cursor: pointer;
+}
+.addTaskInput{
+    margin-top: 30px;
+    padding:0 10px;
+}
+.addTaskInput p{
+    font-size: 14px;
+    font-weight: 700;
+    color: blue;
+}
+input[type='text']{
+    height: 45px;
+    width: 100%;
+    border:none;
+    outline: 0;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin:20px 0;
+    padding: 0 10px;
+    gap: 10px;
+}
